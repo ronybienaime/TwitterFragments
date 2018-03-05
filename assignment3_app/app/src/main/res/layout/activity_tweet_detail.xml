@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:context="com.codepath.apps.restclienttemplate.activities.TweetDetailActivity">
+        <include layout="@layout/toolbar_main"
+            android:id="@+id/appbar"/>
+
+        <ImageView
+            android:layout_width="75dp"
+            android:layout_height="75dp"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            tools:src="@drawable/ic_new_tweet"
+            android:layout_below="@+id/appbar"
+            android:id="@+id/profile_image_detail"/>
+
+        <TextView
+            android:id="@+id/name_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="Name"
+            android:layout_marginTop="15dp"
+            android:textSize="15sp"
+            android:textColor="@color/black"
+            android:layout_marginLeft="10dp"
+            android:layout_below="@+id/appbar"
+            android:layout_toRightOf="@+id/profile_image_detail" />
+
+        <TextView
+            android:id="@+id/body_detail"
+            android:layout_width="match_parent"
+            android:layout_height="120dp"
+            android:autoLink="web"
+            android:linksClickable="true"
+            tools:text="TextView"
+            android:textSize="20sp"
+            android:textColor="@color/black"
+            android:layout_below="@+id/profile_image_detail"
+            android:layout_margin="10dp" />
+
+        <ImageView
+            android:layout_width="250dp"
+            android:layout_height="250dp"
+            android:id="@+id/image_embed"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/reply_button"
+            android:layout_below="@+id/body_detail"
+            android:scaleType="fitCenter"
+            android:layout_alignParentLeft="true"/>
+
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:id="@+id/reply_btn"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:src="@drawable/reply_button"
+            android:layout_below="@+id/image_embed"
+            android:layout_alignParentLeft="true"/>
+
+
+        </RelativeLayout>
+    </ScrollView>
+</layout>
+

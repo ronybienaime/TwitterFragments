@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <RelativeLayout
+        android:orientation="vertical" android:layout_width="match_parent"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/delete"
+            android:src="@drawable/ic_delete"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentTop="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginTop="16dp" />
+
+
+        <ImageView
+            android:id="@+id/profie_image"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            tools:src="@drawable/delete" />
+
+
+        <ImageView
+            android:id="@+id/draft"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:src="@drawable/draft"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="75dp"
+            android:layout_toLeftOf="@+id/profie_image"
+            android:layout_alignParentRight="true"/>
+
+        <EditText
+            android:layout_width="match_parent"
+            android:id="@+id/edit_tweet"
+            android:layout_height="200dp"
+            android:layout_below="@+id/delete"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="5dp"
+            android:hint="What's happening?"/>
+
+        <Button
+            android:layout_below="@+id/edit_tweet"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tweet_btn"
+            android:text="Tweet"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="10dp"
+            android:background="@android:color/holo_blue_light"
+            android:layout_marginBottom="20dp"/>
+
+        <TextView
+            android:id="@+id/watcher"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/edit_tweet"
+            android:layout_marginEnd="17dp"
+            android:layout_marginTop="14dp"
+            android:layout_toStartOf="@+id/tweet_btn"
+            android:text="140" />
+
+
+    </RelativeLayout>
+</layout>
