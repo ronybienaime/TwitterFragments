@@ -1,8 +1,8 @@
-# Project 4 - *MyTwitter*
+# Project 4 - *TwitterFragments*
 
-**MyTwitter** is an android app that allows a user to view home and mentions timelines, view user profiles with user timelines, as well as compose and post a new tweet. The app utilizes [Twitter REST API](https://developer.twitter.com/en/docs/api-reference-index).
+**TwitterFragments** is an android app that allows a user to view home and mentions timelines, view user profiles with user timelines, as well as compose and post a new tweet. The app utilizes [Twitter REST API](https://developer.twitter.com/en/docs/api-reference-index).
 
-Time spent: **40** hours spent in total
+Time spent: **16** hours spent in total
 
 ## User Stories
 
@@ -22,47 +22,37 @@ The following **required** functionality is completed:
 The following **optional** features are implemented:
 
 * [x] User can view following / followers list through the profile
-* [x] Implements robust error handling, [check if internet is available](http://guides.codepath.com/android/Sending-and-Managing-Network-Requests#checking-for-network-connectivity), handle error cases, network failures
-* [x] When a network request is sent, user sees an [indeterminate progress indicator](http://guides.codepath.com/android/Handling-ProgressBars#progress-within-actionbar)
+* [ ] Implements robust error handling, [check if internet is available](http://guides.codepath.com/android/Sending-and-Managing-Network-Requests#checking-for-network-connectivity), handle error cases, network failures
+* [ ] When a network request is sent, user sees an [indeterminate progress indicator](http://guides.codepath.com/android/Handling-ProgressBars#progress-within-actionbar)
 * [x] User can **"reply" to any tweet on their home timeline**
-  * [x] The user that wrote the original tweet is automatically "@" replied in compose
+  *[x] The user that wrote the original tweet is automatically "@" replied in compose
 * [x] User can click on a tweet to be **taken to a "detail view"** of that tweet
- * [x] User can take favorite (and unfavorite) or retweet actions on a tweet
+ * [ ] User can take favorite (and unfavorite) or retweet actions on a tweet
 * [x] User can **search for tweets matching a particular query** and see results
-* [x] Usernames and hashtags are styled and clickable within tweets [using clickable spans](http://guides.codepath.com/android/Working-with-the-TextView#creating-clickable-styled-spans)
+* [ ] Usernames and hashtags are styled and clickable within tweets [using clickable spans](http://guides.codepath.com/android/Working-with-the-TextView#creating-clickable-styled-spans)
 
 The following **bonus** features are implemented:
 
 * [x] Use Parcelable instead of Serializable using the popular [Parceler library](http://guides.codepath.com/android/Using-Parceler).
 * [x] Leverages the [data binding support module](http://guides.codepath.com/android/Applying-Data-Binding-for-Views) to bind data into layout templates.
-* [ ] On the profile screen, leverage the [CoordinatorLayout](http://guides.codepath.com/android/Handling-Scrolls-with-CoordinatorLayout#responding-to-scroll-events) to [apply scrolling behavior](https://hackmd.io/s/SJyDOCgU) as the user scrolls through the profile timeline.
+* [x] On the profile screen, leverage the [CoordinatorLayout](http://guides.codepath.com/android/Handling-Scrolls-with-CoordinatorLayout#responding-to-scroll-events) to [apply scrolling behavior](https://hackmd.io/s/SJyDOCgU) as the user scrolls through the profile timeline.
 * [x] User can view their direct messages (or send new ones)
 
 The following **additional** features are implemented:
 
 * [ ] List anything else that you can get done to improve the app functionality!
-* [x] Added app shortcut behavior for New tweet and search twitter 
-* [x] Used Navigation header to show user Profile
-* [x] Added Favorites list in user profiles
-
 
 ## Video Walkthrough
 
 Here's a walkthrough of implemented user stories:
 
-
-Video Walk through : http://i.imgur.com/W7j3wnb.gif , http://i.imgur.com/mmrAUxn.gif
-
-<img src='http://i.imgur.com/W7j3wnb.gif' title='Video Walkthrough 1' width='' alt='Video Walkthrough' />
-
-<img src='http://i.imgur.com/mmrAUxn.gif' title='Video Walkthrough 2 ' width='' alt='Video Walkthrough' />
+<img src='http://i.imgur.com/link/to/your/gif/file.gif' title='Video Walkthrough' width='' alt='Video Walkthrough' />
 
 GIF created with [LiceCap](http://www.cockos.com/licecap/).
 
 ## Notes
 
 Describe any challenges encountered while building the app.
-1. Coordinator layout and appBar not able to scroll up in Profile activity. Not able to solve it even though used app:layout_behavior="@string/appbar_scrolling_view_behavior"
 
 ## Open-source libraries used
 
@@ -71,7 +61,7 @@ Describe any challenges encountered while building the app.
 
 ## License
 
-    Copyright [yyyy] [name of copyright owner]
+    Copyright [2018] [Rony BIEN AIME]
 
     Licensed under the Apache License, Version 2.0 (the "License");
     you may not use this file except in compliance with the License.
